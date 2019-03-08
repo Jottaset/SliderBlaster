@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SliderBlaster"
+             x:Class="SliderBlaster.MainPage">
+    
+    <StackLayout>
+        
+        <!-- Place new controls here -->
+        
+        <Label Text="Tem que Girar!"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               x:Name="label_roda"
+               FontSize="20"
+               />
+        
+        <Slider x:Name="slider_roda"
+                ValueChanged="Handle_ValueChanged"
+                Minimum="0"
+                Maximum="360"
+                />
+        
+        <Label Text="0"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               x:Name="label_valorDoSlider"
+               FontSize="30"
+               />
+        
+        
+    </StackLayout>
+</ContentPage>
